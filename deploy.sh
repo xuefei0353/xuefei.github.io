@@ -7,8 +7,8 @@ set -e
 npm run docs:build
 
 # 进入生成的文件夹
-git checkout gh-pages
+git checkout master
 git status
 git add -A
-git commit -m 'deploy'
+git commit -m 'update'
 git push
