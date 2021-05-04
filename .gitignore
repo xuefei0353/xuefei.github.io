@@ -1,2 +1,3 @@
 node_modules
-docs/test
+test
+docs/.vuepress/dist
