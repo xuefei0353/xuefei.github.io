@@ -12,3 +12,7 @@ echo "params : $1"
 # git add -A
 # git commit -m 'update'
 # git push
+cd docs/.vuepress/dist
+git add -A
+git commit -m 'update'
+git push -f git@github.com:xuefei0353/xuefei0353.github.io.git master:gh-pages
