@@ -8,6 +8,7 @@ module.exports = {
         lineNumbers: true // 代码块显示行号
     },
     themeConfig: {
+        lastUpdated: '更新时间', // string | boolean
         nav: [
             { text: '主页', link: '/' },
             { text: 'Github', link: 'https://github.com/xuefei0353' }

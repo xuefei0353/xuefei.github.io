@@ -43,11 +43,17 @@ var test = {
     var go = function(){
       console.log(this.a);
     }
-    go();
+    go();//没有对象调用go方法，所以go方法里面的this指向全局
   }
 }
 test.init();//20
 ```
+
+## 箭头函数
+箭头函数表达式的语法比函数表达式更简洁，并且没有自己的this，arguments，super或new.target。箭头函数表达式更适用于那些本来需要匿名函数的地方，并且它不能用作构造函数。
+
+引入箭头函数有两个方面的作用：更简短的函数并且不绑定this。
+- 箭头函数不会创建自己的this,它只会从自己的作用域链的上一层继承this。
 ```js
 this.a = 20;
 var test = {
@@ -60,37 +66,28 @@ var test = {
   }
 }
 test.init();//50
-```
-## 箭头函数
-箭头函数表达式的语法比函数表达式更简洁，并且没有自己的this，arguments，super或new.target。箭头函数表达式更适用于那些本来需要匿名函数的地方，并且它不能用作构造函数。
-
-引入箭头函数有两个方面的作用：更简短的函数并且不绑定this。
-- 箭头函数不会创建自己的this,它只会从自己的作用域链的上一层继承this。
-  
+```  
 ```js
-// 不使用箭头函数
-this.age=2;
-function Person(){
-  this.age = 0;
-  setTimeout(function(){
-    this.age++;//this指向了window
-    console.log(this.age);
-  }, 1000);
+this.age = 2;
+function Person() {
+    this.age = 0;
+    setTimeout(function () {
+        this.age++;//this指向了window
+        console.log(this.age);
+    }, 1000);
 }
-
 var p = new Person();// 3
 ```
 ```js
 // 使用箭头函数
-this.age=2;
-function Person(){
-  this.age = 0;
-  setTimeout(() => {
-    this.age++; // this 正确地指向 p 实例
-    console.log(this.age);
-  }, 1000);
+this.age = 2;
+function Person() {
+    this.age = 0;
+    setTimeout(() => {
+        this.age++; // this 正确地指向 p 实例
+        console.log(this.age);
+    }, 1000);
 }
-
 var p = new Person();//1
 ```
 
