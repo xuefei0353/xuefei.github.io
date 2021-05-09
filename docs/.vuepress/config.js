@@ -20,7 +20,10 @@ module.exports = {
                     children: getRoute('javascript', [
                         '闭包',
                         'EventLoop',
-                        'js基础',
+                        '变量提升',
+                        '严格模式',
+                        '箭头函数',
+                        'this',
                     ])
                 },
             ],
