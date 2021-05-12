@@ -8,7 +8,7 @@
     
     <meta name="description" content="学习笔记">
     
-    <link rel="preload" href="/assets/css/0.styles.e4d8b86b.css" as="style"><link rel="preload" href="/assets/js/app.517be8c3.js" as="script"><link rel="preload" href="/assets/js/2.aca67f33.js" as="script"><link rel="preload" href="/assets/js/11.4881308d.js" as="script"><link rel="prefetch" href="/assets/js/10.e2680d2d.js"><link rel="prefetch" href="/assets/js/12.762bd4b6.js"><link rel="prefetch" href="/assets/js/13.39f8e35e.js"><link rel="prefetch" href="/assets/js/14.e943ae36.js"><link rel="prefetch" href="/assets/js/3.95796f63.js"><link rel="prefetch" href="/assets/js/4.7b6dc275.js"><link rel="prefetch" href="/assets/js/5.4f56dc33.js"><link rel="prefetch" href="/assets/js/6.72ad7c85.js"><link rel="prefetch" href="/assets/js/7.13123ffc.js"><link rel="prefetch" href="/assets/js/8.9b3ce147.js"><link rel="prefetch" href="/assets/js/9.2df5ccc8.js">
+    <link rel="preload" href="/assets/css/0.styles.e4d8b86b.css" as="style"><link rel="preload" href="/assets/js/app.ce45b731.js" as="script"><link rel="preload" href="/assets/js/2.aca67f33.js" as="script"><link rel="preload" href="/assets/js/11.085a8769.js" as="script"><link rel="prefetch" href="/assets/js/10.ea95d168.js"><link rel="prefetch" href="/assets/js/12.14e9c11b.js"><link rel="prefetch" href="/assets/js/13.1ff34a03.js"><link rel="prefetch" href="/assets/js/14.fd197477.js"><link rel="prefetch" href="/assets/js/3.95796f63.js"><link rel="prefetch" href="/assets/js/4.7b6dc275.js"><link rel="prefetch" href="/assets/js/5.4f56dc33.js"><link rel="prefetch" href="/assets/js/6.72ad7c85.js"><link rel="prefetch" href="/assets/js/7.89936b35.js"><link rel="prefetch" href="/assets/js/8.9b3ce147.js"><link rel="prefetch" href="/assets/js/9.6460f431.js">
     <link rel="stylesheet" href="/assets/css/0.styles.e4d8b86b.css">
   </head>
   <body>
@@ -33,7 +33,7 @@
   <span class="token function">fn2</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//2</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//Uncaught TypeError: Cannot read property 'num' of undefined</span>
-</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>解析：在函数内部，this的值取决于函数被调用的方式。在严格模式下，如果进入执行环境时没有设置 this 的值，this 会保持为 undefined 。在这个例子中，this 应是 undefined，因为 fn 是被直接调用的，而不是作为对象的属性或方法调用的（如 window.fn()）。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>解析：在函数内部，this的值取决于函数被调用的方式。在严格模式下，如果进入执行环境时没有设置 this 的值，this 会保持为 undefined 。在这个例子中，this 应是 undefined，因为 fn 是被直接调用的，而不是作为对象的属性或方法调用的（如 window.fn()）。</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">5/9/2021, 10:47:06 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
       ←
       <a href="/note/javascript/变量提升.html" class="prev">
         变量提升
@@ -42,6 +42,6 @@
       </a>
       →
     </span></p></div> </main></div><div class="global-ui"></div></div>
-    <script src="/assets/js/app.517be8c3.js" defer></script><script src="/assets/js/2.aca67f33.js" defer></script><script src="/assets/js/11.4881308d.js" defer></script>
+    <script src="/assets/js/app.ce45b731.js" defer></script><script src="/assets/js/2.aca67f33.js" defer></script><script src="/assets/js/11.085a8769.js" defer></script>
   </body>
 </html>
