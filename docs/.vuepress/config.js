@@ -18,12 +18,20 @@ module.exports = {
                 {
                     title: 'javascript',
                     children: getRoute('javascript', [
+                        '对象',
+                        '原型',
                         '闭包',
                         'EventLoop',
                         '变量提升',
                         '严格模式',
                         '箭头函数',
                         'this',
+                    ])
+                },
+                {
+                    title: 'TypeScript',
+                    children: getRoute('TypeScript', [
+                        '基础',
                     ])
                 },
             ],
