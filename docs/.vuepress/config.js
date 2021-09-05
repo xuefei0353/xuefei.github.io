@@ -16,8 +16,29 @@ module.exports = {
         sidebar: {
             '/note/': [
                 {
+                    title: 'HTTP',
+                    children: getRoute('HTTP', [
+                        'HTTP简介',
+                        'HTTP缓存'
+                    ])
+                },
+                {
+                    title: '性能优化',
+                    children: getRoute('性能优化', [
+                        '性能分析',
+                    ])
+                },
+                {
+                    title: 'webpack',
+                    children: getRoute('webpack', [
+                        'webpack使用',
+                        '打包优化',
+                    ])
+                },
+                {
                     title: 'javascript',
                     children: getRoute('javascript', [
+                        // '函数式编程',
                         '对象',
                         '原型',
                         '闭包',
@@ -27,6 +48,8 @@ module.exports = {
                         '箭头函数',
                         'this',
                         '知识点',
+                        // '手写js',
+                        'JavaScript modules 模块'
                     ])
                 },
                 {
@@ -35,11 +58,26 @@ module.exports = {
                         '基础',
                     ])
                 },
+                {
+                    title: '前端框架',
+                    children: getRoute('前端框架', [
+                        'vue源码解析',
+                    ])
+                },
+                {
+                    title: '实战',
+                    children: getRoute('实战', [
+                        'vue3',
+                    ])
+                },
             ],
 
         },
         sidebarDepth: 2, // 侧边栏显示2级
-    }
+    },
+    plugins: [
+        ['image']
+    ]
 };
 function getRoute(prefix, arr) {
     return arr.map(item => prefix + '/' + item);
