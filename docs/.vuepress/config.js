@@ -19,7 +19,8 @@ module.exports = {
                     title: 'HTTP',
                     children: getRoute('HTTP', [
                         'HTTP简介',
-                        'HTTP缓存'
+                        'HTTP缓存',
+                        'HTTPS'
                     ])
                 },
                 {
