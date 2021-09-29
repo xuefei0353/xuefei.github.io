@@ -8,7 +8,7 @@
     
     <meta name="description" content="学习笔记">
     
-    <link rel="preload" href="/assets/css/0.styles.e4d8b86b.css" as="style"><link rel="preload" href="/assets/js/app.f2af2083.js" as="script"><link rel="preload" href="/assets/js/2.aca67f33.js" as="script"><link rel="preload" href="/assets/js/26.b75d3783.js" as="script"><link rel="prefetch" href="/assets/js/10.aefb93a4.js"><link rel="prefetch" href="/assets/js/11.4e9b0fe8.js"><link rel="prefetch" href="/assets/js/12.4a0e3c4e.js"><link rel="prefetch" href="/assets/js/13.147002a6.js"><link rel="prefetch" href="/assets/js/14.7694f66b.js"><link rel="prefetch" href="/assets/js/15.373e4b94.js"><link rel="prefetch" href="/assets/js/16.8830d428.js"><link rel="prefetch" href="/assets/js/17.9c72f6d7.js"><link rel="prefetch" href="/assets/js/18.2dd816fc.js"><link rel="prefetch" href="/assets/js/19.daa707ab.js"><link rel="prefetch" href="/assets/js/20.3baa0c6f.js"><link rel="prefetch" href="/assets/js/21.dce7f6c2.js"><link rel="prefetch" href="/assets/js/22.db8e1eb1.js"><link rel="prefetch" href="/assets/js/23.16219efb.js"><link rel="prefetch" href="/assets/js/24.010bab45.js"><link rel="prefetch" href="/assets/js/25.4e9df6b5.js"><link rel="prefetch" href="/assets/js/27.4c10c2a7.js"><link rel="prefetch" href="/assets/js/28.3b1d69b7.js"><link rel="prefetch" href="/assets/js/3.f4a2fd67.js"><link rel="prefetch" href="/assets/js/4.7b6dc275.js"><link rel="prefetch" href="/assets/js/5.4f56dc33.js"><link rel="prefetch" href="/assets/js/6.72ad7c85.js"><link rel="prefetch" href="/assets/js/7.1d94f762.js"><link rel="prefetch" href="/assets/js/8.1947d991.js"><link rel="prefetch" href="/assets/js/9.c4060e12.js">
+    <link rel="preload" href="/assets/css/0.styles.e4d8b86b.css" as="style"><link rel="preload" href="/assets/js/app.66fd666d.js" as="script"><link rel="preload" href="/assets/js/2.aca67f33.js" as="script"><link rel="preload" href="/assets/js/27.eac5e482.js" as="script"><link rel="prefetch" href="/assets/js/10.1b7d2058.js"><link rel="prefetch" href="/assets/js/11.86b661a3.js"><link rel="prefetch" href="/assets/js/12.71362b26.js"><link rel="prefetch" href="/assets/js/13.ad63ba70.js"><link rel="prefetch" href="/assets/js/14.72d3056e.js"><link rel="prefetch" href="/assets/js/15.f2b158e0.js"><link rel="prefetch" href="/assets/js/16.5b2fa53d.js"><link rel="prefetch" href="/assets/js/17.0f198a24.js"><link rel="prefetch" href="/assets/js/18.dc437207.js"><link rel="prefetch" href="/assets/js/19.780ea979.js"><link rel="prefetch" href="/assets/js/20.b8b5d7c0.js"><link rel="prefetch" href="/assets/js/21.a232ae72.js"><link rel="prefetch" href="/assets/js/22.8350c986.js"><link rel="prefetch" href="/assets/js/23.9fcf0c2e.js"><link rel="prefetch" href="/assets/js/24.e0841a3c.js"><link rel="prefetch" href="/assets/js/25.ab664ee0.js"><link rel="prefetch" href="/assets/js/26.7f716d40.js"><link rel="prefetch" href="/assets/js/28.8c53ad1c.js"><link rel="prefetch" href="/assets/js/29.e9e4a192.js"><link rel="prefetch" href="/assets/js/3.7435d281.js"><link rel="prefetch" href="/assets/js/30.bc666ccb.js"><link rel="prefetch" href="/assets/js/4.7b6dc275.js"><link rel="prefetch" href="/assets/js/5.4f56dc33.js"><link rel="prefetch" href="/assets/js/6.72ad7c85.js"><link rel="prefetch" href="/assets/js/7.1d94f762.js"><link rel="prefetch" href="/assets/js/8.e0642098.js"><link rel="prefetch" href="/assets/js/9.7edaa8d2.js">
     <link rel="stylesheet" href="/assets/css/0.styles.e4d8b86b.css">
   </head>
   <body>
@@ -46,7 +46,7 @@ AST 元素节点总共有 3 种类型，type 为 1 表示是普通元素，为 2
 vue1中，一个指令对应一个watcher，不需要dom diff，占用大量内存，会很卡。<br>
 vue2中，一个组件对应一个watcher，需要dom diff，提高性能。<br>
 而react，没有watcher，需要对整个页面进行dom diff，js运行得多了，时间长，就会造成阻塞，所以需要运行时优化，提高性能。</p> <h2 id="dep"><a href="#dep" class="header-anchor">#</a> Dep</h2> <p>收集依赖</p> <h2 id="虚拟dom"><a href="#虚拟dom" class="header-anchor">#</a> 虚拟dom</h2> <p>虚拟dom和真实dom区别，真实dom里面包含了很多用不到到的属性。<br>
-vue中通过对html进行正则匹配，生成ast，再把ast生成render函数。正则匹配有回溯的过程，如果html模板很大，速度就会慢。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+vue中通过对html进行正则匹配，生成ast，再把ast生成render函数。正则匹配有回溯的过程，如果html模板很大，速度就会慢。</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">9/5/2021, 10:38:35 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
       ←
       <a href="/note/TypeScript/基础.html" class="prev">
         基础
@@ -55,6 +55,6 @@ vue中通过对html进行正则匹配，生成ast，再把ast生成render函数�
       </a>
       →
     </span></p></div> </main></div><div class="global-ui"></div></div>
-    <script src="/assets/js/app.f2af2083.js" defer></script><script src="/assets/js/2.aca67f33.js" defer></script><script src="/assets/js/26.b75d3783.js" defer></script>
+    <script src="/assets/js/app.66fd666d.js" defer></script><script src="/assets/js/2.aca67f33.js" defer></script><script src="/assets/js/27.eac5e482.js" defer></script>
   </body>
 </html>
