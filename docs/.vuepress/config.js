@@ -1,7 +1,7 @@
 
 module.exports = {
     title: '博客',
-    description: '学习笔记',
+    description: '前端学习笔记',
     serviceWorker: true, // 是否开启 PWA
     base: '/', // 这是部署到github相关的配置
     markdown: {
