@@ -69,6 +69,7 @@ module.exports = {
                     title: '实战',
                     children: getRoute('实战', [
                         'vue3',
+                        // 'react'
                     ])
                 },
             ],

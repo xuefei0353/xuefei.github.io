@@ -1,4 +1,4 @@
-# webpack使用
+# webpack4使用
 ## 准备
 [nrm](https://www.npmjs.com/package/nrm) 管理npm镜像   
 [npx](https://www.npmjs.com/package/npx) 调用项目内部安装的模板   
@@ -43,6 +43,9 @@ webpack默认只能处理js和json文件，其他文件需要用loader转换。
 2. 打包到dist目录下，并改一个名字
 3. 得到图片的完整路径
 4. 将图片路径作为返回值，返回给我们引入的图片的变量
+
+注意：file-loader 从 5.0 版本开始，将默认输出改成了 esModule 模块，开发环境需要改成输出commonJS模块，
+配置 `esModule:false` 。
 ### less-laoder
 ```js
 module.exports = {
@@ -92,8 +95,9 @@ limit的值设置为5kb，表示当文件小于等于5kb时，都会被打包成
 {
     loader: 'url-loader',
     options: {
-        name: 'static/img/[name].[hash:5].[ext]',
-        limit: 1024 * 5
+        name: 'static/img/[name].[contenthash:5].[ext]',
+        limit: 1024 * 5,
+        esModule: false //注意：从 3.0 版本开始，将默认输出改成了 esModule 模块，开发环境需要改成输出commonJS模块
     }
 }
 ```
